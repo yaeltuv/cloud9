@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.form-wrapper {
+  margin: 50px auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.field-wrapper{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  width: 400px;
+}
+
+.label {
+  width: 80px;
+}
+
+.required {
+  color: red;
+}
+
+.placeholder, ::placeholder{
+  color: #CECECE;
+}
