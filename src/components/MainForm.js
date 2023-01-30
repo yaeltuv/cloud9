@@ -1,7 +1,5 @@
 import * as React from 'react';
-import Select from '@mui/material/Select';
 import BasicSelect from "./Select";
-import TextAndSelect from "./TextAndSelectField";
 import BasicTextField from "./TextField";
 import BasicButton from './Button';
 import {demands, all_platforms, all_geos, states, languages, ages, genders} from '../consts';
