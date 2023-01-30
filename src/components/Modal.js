@@ -82,7 +82,7 @@ export default function BasicModal({open, setOpen, query, isLoading, result, top
                     <div className="grid-container">
                         {images.map((obj, index)=> {
                             return (<div className="grid-item" key={index}>
-                                <img src={obj.url} />
+                                <img src={obj.url} alt="img" />
                             </div>)
                         })}
                     </div>

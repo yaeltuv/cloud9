@@ -35,7 +35,7 @@ export default function MainForm() {
     const submit = async () => {
         setOpenModal(true);
         setIsLoading(true);
-        const query = `create 5 different headlines for ${platforms[0]} that are localized, ads are about ${topic}. ads length no more than 100 characters per headline with intent of purchasing and include` + '${city:capitalized}$ instead of location. finish each headline with dot please.';
+        const query = 'create 5 different headlines for ' +  platforms[0] + ' that are localized, ads are about ' + topic + '. ads length no more than 100 characters per headline with intent of purchasing and include' + ' ${city:capitalized}$ instead of location. finish each headline with dot please.';
         setQuery(query);
         try {
             const completion = await openai.createCompletion({
