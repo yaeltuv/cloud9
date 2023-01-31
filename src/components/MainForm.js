@@ -5,6 +5,7 @@ import BasicButton from './Button';
 import {demands, all_platforms, all_countries, states, languages, ages, genders, tones} from '../consts';
 import AdTopic from "./AdTopic";
 import BasicModal from "./Modal";
+import TextArea from "./TextArea";
 const { Configuration, OpenAIApi } = require("openai");
 
 const queryString = window.location.search;
@@ -90,7 +91,7 @@ export default function MainForm() {
                 multiple={true}
             />
             <AdTopic topic={topic} topics={topics} setTopic={setTopic} setTopics={setTopics}/>
-            <BasicTextField
+            <TextArea
                 label="Description"
                 value={description || ''}
                 setValue={setDescription}

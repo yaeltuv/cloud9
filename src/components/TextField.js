@@ -23,10 +23,10 @@ export default function BasicTextField({value, setValue, label, placeholder, req
                     inputProps={{
                         style: {
                             height: adtopic ? 30 : 80,
-                            padding: '0 14px',
+                            padding: '0 14px'
                         },
                     }}
-                    style={{width: width || 300, marginLeft: adtopic ? 0 : 5}}
+                    style={{width: width || 300, marginLeft: adtopic ? 0 : 27}}
                     onChange={handleChange}
                     variant="outlined" />
             </div>
