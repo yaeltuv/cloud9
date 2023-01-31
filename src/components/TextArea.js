@@ -13,7 +13,7 @@ export default function TextArea({placeholder, value, setValue, label, required}
             value={value}
             placeholder={placeholder}
             onChange={handleChange}
-            style={{ width: 265, height: 150 }}
+            style={{ width: 270, height: 150, outline: 'none', border: '1px solid #CCCCCC', borderRadius: 5 }}
         />
         </div>
     );
