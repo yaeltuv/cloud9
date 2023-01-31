@@ -7,8 +7,10 @@ import AdTopic from "./AdTopic";
 import BasicModal from "./Modal";
 const { Configuration, OpenAIApi } = require("openai");
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
 const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: urlParams.get('key')
 });
 
 const openai = new OpenAIApi(configuration);
