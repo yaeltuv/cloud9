@@ -19,7 +19,7 @@ export default function BasicSelect({options, label, value, setValue, multiple, 
                         id="demo-simple-select"
                         value={value}
                         onChange={handleChange}
-                        style={{width: width || 200}}
+                        style={{width: width || 300, height: 30}}
                         multiple={multiple}
                         displayEmpty
                         inputProps={{ 'aria-label': 'Without label' }}

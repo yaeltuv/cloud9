@@ -13,6 +13,7 @@ export default function AdTopic({topic, topics, setTopic, setTopics}) {
                                 required={true}
                                 setValue={setTopic}
                                 width = { 200 }
+                                adtopic= {true}
                                 placeholder="Type your ad topic"
                 />
                 or

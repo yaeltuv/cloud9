@@ -95,7 +95,7 @@ export default function MainForm() {
                 value={description || ''}
                 setValue={setDescription}
                 placeholder="Type Description"
-                width={ 410 }
+                width={ 400 }
                 height={300}
             />
             <BasicSelect
@@ -145,7 +145,10 @@ export default function MainForm() {
                 required={true}
                 setValue={setGender}
             />
-            <BasicButton text="Generate" clickHandler={submit}/>
+            <div className="buttons-wrapper-bottom">
+                <div>Clear</div>
+                <BasicButton text="Generate" clickHandler={submit}/>
+            </div>
             <BasicModal open={openModal}
                         setOpen={setOpenModal}
                         query={query}
