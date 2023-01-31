@@ -9,7 +9,7 @@ export default function BasicTextField({value, setValue, label, placeholder, req
     return (
         <Box
             component="form"
-            sx={{ width: width || 400 }}
+            sx={{ width: width || 400}}
             noValidate
             autoComplete="off"
         >

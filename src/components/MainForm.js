@@ -57,39 +57,17 @@ export default function MainForm() {
                     .replace('3','')
                     .replace('4','')
                     .replace('5',''));
-                setIsLoading(false)
+
             }
             if(images){
                 console.log(images);
                 setImages(images.data.data);
+                setIsLoading(false)
             }
         }catch(e){
             setIsLoading(false);
             console.log(e);
         }
-        // fetch({
-        //     method: "POST",
-        //     url: "https://api.openai.com/v1/completions",
-        //     data: {
-        //         prompt: query,
-        //         temperature: 0.5,
-        //         n: 1,
-        //         model: "text-davinci-003"
-        //     },
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //         Authorization:
-        //             "Bearer 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"
-        //     }
-        // })
-        //     .then(res => res.json())
-        //     .then((res) => {
-        //         console.log(res);
-        //         responseHandler(res);
-        //     })
-        //     .catch((e) => {
-        //         console.log(e.message, e);
-        //     });
     };
 
     return (
@@ -117,7 +95,7 @@ export default function MainForm() {
                 value={description || ''}
                 setValue={setDescription}
                 placeholder="Type Description"
-                width={ 600 }
+                width={ 410 }
                 height={300}
             />
             <BasicSelect

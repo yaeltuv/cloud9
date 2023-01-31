@@ -7,9 +7,8 @@ import {all_topics} from "../consts";
 export default function AdTopic({topic, topics, setTopic, setTopics}) {
     return (
         <div className="ad-topic-wrapper">
-            <label className="label"><span className="required">*</span>Ad Topic:</label>
+            <label title="You can type your own topic, connect to one of the trend services by selecting it from the list or upload a CSV file" className="label"><span className="required">*</span>Ad Topic:</label>
             <div className="ad-topic">
-
                 <BasicTextField value = {topic}
                                 required={true}
                                 setValue={setTopic}

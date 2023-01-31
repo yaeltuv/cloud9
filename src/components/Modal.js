@@ -50,9 +50,17 @@ export default function BasicModal({open, setOpen, query, isLoading, result, top
                     </div>
                     {isLoading && <div>Loading...</div>}
                     {!isLoading &&
-                    <div className="output">
-                        {result.split('.').map((item,index) => <div key={index}>{item}</div>)}
-                    </div>
+                        <div className="output-wrapper">
+                            <div className="output">
+                                {result.split('.').map((item,index) => <div key={index}>{item}</div>)}
+                            </div>
+                            <Typography id="modal-modal-title" variant="h6" component="h2">
+                                DALL-E
+                            </Typography>
+                            <div className ="output scroll">
+                                {images.map((obj, index) => <div key={index}>{JSON.stringify(obj)}</div>)}
+                            </div>
+                        </div>
                     }
                     <Button2 text="Preview" clickHandler={clickHandler}/>
                 </Box>
